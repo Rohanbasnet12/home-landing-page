@@ -37,6 +37,11 @@
 }
 
 /* UTILS */
+.box-parah {
+    color: var(--DARKGRAYISH-BLUE);
+    font-weight: var(--FONT-WEIGHT1);
+    border-bottom: 2px solid var(--DARKGRAYISH-BLUE);
+}
 
 /* GENERAL STYLING */
 html,
@@ -47,7 +52,6 @@ body {
 /* STYLING MAIN */
 #main {
     width: 100%;
-    height: 100vh;
     padding: var(--pad-y) var(--pad-x);
 }
 
@@ -57,8 +61,8 @@ body {
 }
 
 .nav-head p {
+    font-family: serif;
     font-weight: var(--FONT-WEIGHT3);
-    letter-spacing: -10px;
 }
 
 #menu li a {
@@ -68,4 +72,46 @@ body {
 
 #menu li a:hover {
     color: var(--SOFT-RED);
+}
+
+/* STYLING HOME SECTION */
+#home {
+    font-family: var(--PRIMARY-FONT);
+}
+
+/* STYLING LEFT SECTION OF HOME PAGE */
+.info-head h1 {
+    font-weight: var(--FONT-WEIGHT3);
+    color: var(--DARK-BLUE);
+}
+
+.info-parah p {
+    color: var(--DARK-BLUE);
+    font-size: var(--PARAH-SIZE);
+    font-weight: var(--FONT-WEIGHT1);
+}
+
+.btn {
+    color: var(--OFF-WHITE);
+    background: var(--SOFT-RED);
+    margin-top: 2rem;
+    padding: 12px 29px;
+    letter-spacing: 2px;
+    transition: all .1s ease-out;
+}
+
+.btn:hover {
+    background: var(--DARK-BLUE);
+}
+
+/* STYLING RIGHT SECTION OF HOME PAGE */
+.right {
+    background: var(--DARK-BLUE);
+    padding: 3rem 2.53rem;
+}
+
+.right-head {
+    font-weight: var(--FONT-WEIGHT2);
+    color: var(--SOFT-ORANGE);
+    font-size: 3rem;
 }
