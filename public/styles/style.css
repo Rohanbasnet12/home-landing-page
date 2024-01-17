@@ -1,0 +1,71 @@
+/* LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* FONT WEIGHT */
+    --FONT-WEIGHT1: 400;
+    --FONT-WEIGHT2: 700;
+    --FONT-WEIGHT3: 800;
+
+    /* FONT FAMILY */
+    --PRIMARY-FONT: 'Inter', sans-serif;
+
+    /* PRIMARY COLORS */
+    --SOFT-ORANGE: hsl(35, 77%, 62%);
+    --SOFT-RED: hsl(5, 85%, 63%);
+
+    /* SECONDARY COLORS */
+    --OFF-WHITE: hsl(36, 100%, 99%);
+    --GRAYISH-BLUE: hsl(233, 8%, 79%);
+    --DARKGRAYISH-BLUE: hsl(236, 13%, 42%);
+    --DARK-BLUE: hsl(240, 100%, 5%);
+
+    /* FONT SIZE */
+    --PARAH-SIZE: 15px;
+
+    /* UTILS */
+    --pad-y: 2rem;
+    --pad-x: 5rem;
+}
+
+/* UTILS */
+
+/* GENERAL STYLING */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* STYLING MAIN */
+#main {
+    width: 100%;
+    height: 100vh;
+    padding: var(--pad-y) var(--pad-x);
+}
+
+/* Styling header */
+#navbar {
+    overflow: hidden;
+}
+
+.nav-head p {
+    font-weight: var(--FONT-WEIGHT3);
+    letter-spacing: -10px;
+}
+
+#menu li a {
+    color: var(--DARK-BLUE);
+    font-family: var(--PRIMARY-FONT);
+}
+
+#menu li a:hover {
+    color: var(--SOFT-RED);
+}
