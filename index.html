@@ -18,7 +18,7 @@
   <main id="main">
     <header id="navbar" class="flex justify-between items-center">
       <div class="nav-head">
-        <p class="text-6xl">W.</p>
+        <a href="#" class="text-6xl cursor-pointer">W.</a>
       </div>
       <ul id="menu" class="flex gap-8">
         <li><a href="#">Home</a></li>
@@ -27,9 +27,29 @@
         <li><a href="#">Trending</a></li>
         <li><a href="#">Categories</a></li>
       </ul>
+
+      <div class="ham-menu">
+        <div class="close">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </div>
+        <div class="open">
+          <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+        </div>
+      </div>
     </header>
 
-    <section id="home" class="container w-full h-full mt-9 flex items-center justify-center gap-6">
+    <section id="home" class="container mt-9 flex items-center justify-center gap-6">
+      <!-- Left section of the home container -->
       <div class="left w-4/6 h-full">
         <div class="img">
           <img src="./assets/images/image-web-3-desktop.jpg" alt="">
@@ -51,55 +71,75 @@
           </div>
         </div>
       </div>
-      <div class="right w-2/6 h-full">
+
+      <!-- Right section of the home container -->
+      <div class="right w-2/6 flex flex-col">
         <h2 class="right-head">New</h2>
-        <div class="articles grid grid-rows-3 gap-4">
-          <div class="box1">
-            <h2 class="text-2xl text-white">
+        <div class="articles">
+          <div class="box">
+            <a href="#" class="text-2xl text-white">
               Hydrogen VS Electric Cars
-            </h2>
-            <p class="box-parah pb-3">
+            </a>
+            <p class="box-parah">
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
           </div>
-          <div class="box2">
-            <h2 class="text-2xl text-white">
+          <div class="box">
+            <a href="#" class="text-2xl text-white">
               The Downsides of AI Artistry
-            </h2>
-            <p class="box-parah pb-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, consequuntur.
+            </a>
+            <p class="box-parah">
+              What are the possible adverse effects of on-demand AI image generation
             </p>
           </div>
-          <div class="box3">
-            <h2 class="text-2xl text-white">
+          <div class="box">
+            <a href="#" class="text-2xl text-white">
               Is VC Funding Drying Up?
-            </h2>
-            <p class="box-parah pb-3">
+            </a>
+            <p class="box-parah">
               Private funding by VC firms is down 50% YOY. We take a look at what that means.
             </p>
           </div>
         </div>
       </div>
+
+    </section>
+
+    <!-- Hero section -->
+    <section id="hero" class="container w-full mt-20 grid grid-cols-3 gap-4">
+      <div class="box flex gap-4 ">
+        <div class="box-img">
+          <img src="./assets//images/image-retro-pcs.jpg" alt="image-retro-pcs">
+        </div>
+        <div class="box-info">
+          <h3 class="text-4xl">01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="box flex gap-4">
+        <div class="box-img">
+          <img src="./assets//images/image-top-laptops.jpg" alt="image-top-laptops">
+        </div>
+        <div class="box-info">
+          <h3 class="text-4xl">02</h3>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="box flex gap-4">
+        <div class="box-img">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+        </div>
+        <div class="box-info">
+          <h3 class="text-4xl">03</h3>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
     </section>
   </main>
-  <!--
-  
-  
-  
-  
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  -->
 
   <!-- Linking jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

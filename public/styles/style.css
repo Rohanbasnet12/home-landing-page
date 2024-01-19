@@ -41,6 +41,11 @@
     color: var(--DARKGRAYISH-BLUE);
     font-weight: var(--FONT-WEIGHT1);
     border-bottom: 2px solid var(--DARKGRAYISH-BLUE);
+    padding: 1rem 0;
+}
+
+.box:last-child .box-parah {
+    border-bottom: none;
 }
 
 /* GENERAL STYLING */
@@ -51,16 +56,17 @@ body {
 
 /* STYLING MAIN */
 #main {
-    width: 100%;
+    width: auto;
     padding: var(--pad-y) var(--pad-x);
 }
 
 /* Styling header */
 #navbar {
     overflow: hidden;
+    z-index: 100;
 }
 
-.nav-head p {
+.nav-head a {
     font-family: serif;
     font-weight: var(--FONT-WEIGHT3);
 }
@@ -74,12 +80,25 @@ body {
     color: var(--SOFT-RED);
 }
 
+.ham-menu {
+    display: none;
+    z-index: 101;
+}
+
+.ham-menu .close {
+    display: none;
+}
+
 /* STYLING HOME SECTION */
 #home {
     font-family: var(--PRIMARY-FONT);
 }
 
 /* STYLING LEFT SECTION OF HOME PAGE */
+.left {
+    min-height: 530px;
+}
+
 .info-head h1 {
     font-weight: var(--FONT-WEIGHT3);
     color: var(--DARK-BLUE);
@@ -107,11 +126,66 @@ body {
 /* STYLING RIGHT SECTION OF HOME PAGE */
 .right {
     background: var(--DARK-BLUE);
-    padding: 3rem 2.53rem;
+    min-height: 530px;
+    padding: 1rem 2rem;
+}
+
+.right-head {
+    line-height: 2;
+}
+
+.articles {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    margin: auto 0;
+}
+
+.box {
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.box:hover a {
+    color: var(--SOFT-ORANGE);
 }
 
 .right-head {
     font-weight: var(--FONT-WEIGHT2);
     color: var(--SOFT-ORANGE);
     font-size: 3rem;
+}
+
+/* Styling hero section */
+.box-img img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.box-info h3 {
+    font-weight: var(--FONT-WEIGHT2);
+    color: var(--DARKGRAYISH-BLUE);
+    line-height: 2;
+}
+
+.box-info>h4 {
+    font-weight: var(--FONT-WEIGHT2);
+    line-height: 2;
+}
+
+.box-info h4:hover {
+    color: var(--SOFT-ORANGE);
+}
+
+/* Ham menu styling */
+.ham_active {
+    display: block !important;
+    position: fixed;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background: var(--OFF-WHITE);
+    color: #000;
+    box-shadow: 5em 5em 15em 5em #000000;
 }
